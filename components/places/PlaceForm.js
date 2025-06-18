@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { ScrollView, TextInput, View, Text, StyleSheet } from "react-native";
 import { Colors } from "../../constants/colors";
+import ImagePicker from "./ImagePicker";
 
 function PlaceForm() {
 
@@ -13,9 +14,10 @@ function PlaceForm() {
     return (
         <ScrollView style={styles.form}>
             <View>
-            <Text style={styles.label}>Title</Text>
-            <TextInput style={styles.input} onChangeText={changeTitleHandler} value={enteredTitle} />
+                <Text style={styles.label}>Title</Text>
+                <TextInput style={styles.input} onChangeText={changeTitleHandler} value={enteredTitle} />
             </View>
+            <ImagePicker />
         </ScrollView>
     )
 }
