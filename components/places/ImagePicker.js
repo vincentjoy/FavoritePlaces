@@ -1,4 +1,4 @@
-import { Alert, View, Image, StyleSheet } from "react-native";
+import { Alert, View, Image, StyleSheet, Text } from "react-native";
 import { launchCameraAsync, useCameraPermissions, PermissionStatus } from "expo-image-picker";
 import { useState } from "react";
 import { Colors } from "../../constants/colors";
