@@ -1,7 +1,8 @@
 import PlaceForm from "../components/places/PlaceForm";
 
 function AddPlace({ navigation }) {
-    function createPlaceHandler(place) {
+    async function createPlaceHandler(place) {
+        await insertPlace(place);
         navigation.navigate('AllPlaces', {
             place: place
         })
